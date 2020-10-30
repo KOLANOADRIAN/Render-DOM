@@ -1,0 +1,23 @@
+*,
+*::after,
+::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth; /*płynne przewijanie strony*/
+}
+
+
+body {
+    font-size: 16px;
+    background-color:$bg-top-color ;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    box-shadow: 0 0 4px 0 black;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $default-font;
+ 
+       
+}
