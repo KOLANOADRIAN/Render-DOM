@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .header {
+        display: block;
+        
+    }
+}
+.header__link {
+    text-decoration: none;
+}
+
+.header__img {
+    margin: 10px;
+    width: 300px;
+     border-radius: 10%;
+ 
+     
+    
+}
+
+@media (max-width:767px) {
+    .header__img {
+        width: 100%;
+        margin: 10px;
+        
+    }
+}

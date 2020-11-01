@@ -23,9 +23,17 @@
 
 <body>
   <div class="container">
+    <header class="header">
+      <a class="header__link" href="https://en.wikipedia.org/wiki/Document_Object_Model" target="blank_"
+        title="go to Wikipedia">
+        <h1 class="header__caption">Document Object Model</h1>
+      </a>
+      <img class="header__img" src="https://placeimg.com/640/480/tech">
+    </header>
     <div class="form__area">
       <form class="form form--add">
         <h1 class="form__title">Dodaj Element do drzewa DOM w html</h1>
+
         <input title="text" class="form__input" placeholder="Element HTML" required>
         <input class="form__input" placeholder="Tekst w elemencie HTML">
         <input class="form__input" placeholder="Atrybut">
@@ -34,7 +42,7 @@
       </form>
       <form class="form form--serch">
         <h1 class="form__title">Przeszukaj drzewo DOM</h1>
-        <input class="form__input"  type="text" placeholder=" Szukana nazwa elementu" required>
+        <input class="form__input--serch" type="text" placeholder=" Szukana nazwa elementu" required>
         <input class="submit" class="form__button" value="znajdz i pokaż informację">
       </form>
     </div>
