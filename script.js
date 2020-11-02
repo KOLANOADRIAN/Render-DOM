@@ -9,10 +9,10 @@ window.ononline = (event) => {
 
 window.onoffline = (event) => {
     console.log("The network connection has been lost.");
-  };
+};
 
 
-  window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     console.log("strona się załadowała");
 });
 
@@ -20,13 +20,26 @@ const init = () => {
     powitanie();
 };
 
-init ();
+init();
 
 
-const addElement = (event) => {
-    event.preventDefault()
-    console.log("submit")
-    
-}
+const addElement = (event, node, txt, attr, value) => {
+    event.preventDefault();
+    const elementNode = document.createElement(node);
+    if (txt) {
+        const text = document.createTextNode(txt);
+        elementNode.appendChild(text);
+    }
+    elementNode.setAttribute(attr, value)
+    document.querySelector(".content").appendChild(elementNode);
+    clearForm = (addForm)
+};
+
 const addForm = document.querySelector(".form--add")
-addForm.addEventListener("submit", addElement)
+addForm.addEventListener("submit", (event) => addElement(
+    event,
+    addForm.elements.node.value,
+    addForm.elements.text.value,
+    addForm.elements.attr.value,
+    addForm.elements.value.value
+))
