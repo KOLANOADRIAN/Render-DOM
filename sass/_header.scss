@@ -1,6 +1,8 @@
 .header {
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-evenly;
+   flex-basis: 40%;
+   margin: 20px;
 }
 @media (max-width:767px) {
     .header {
@@ -9,22 +11,30 @@
     }
 }
 .header__link {
-    text-decoration: none;
+  text-decoration: none;
+}
+.header__caption {
+    color: rgb(45, 59, 119);
+    text-shadow: 2 2px 6px 0 rgb(163, 243, 2);
 }
 
+
 .header__img {
+    width: 150px ;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 white;
+    background-image: url("https://placeimg.com/640/480/tech");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     margin: 10px;
-    width: 300px;
-     border-radius: 10%;
- 
-     
     
 }
 
 @media (max-width:767px) {
     .header__img {
-        width: 100%;
-        margin: 10px;
+       
         
     }
 }

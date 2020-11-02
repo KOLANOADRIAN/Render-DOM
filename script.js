@@ -22,6 +22,11 @@ const init = () => {
 
 init ();
 
-const newEl = document.createElement('span')
-document.body.append(newEl)
 
+const addElement = (event) => {
+    event.preventDefault()
+    console.log("submit")
+    
+}
+const addForm = document.querySelector(".form--add")
+addForm.addEventListener("submit", addElement)
