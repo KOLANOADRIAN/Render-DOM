@@ -35,6 +35,12 @@ const addElement = (event, node, txt, attr, value) => {
     clearForm = (addForm)
 };
 
+const serchElements = (event) => {
+    event.preventDefault();
+    
+}
+
+
 const addForm = document.querySelector(".form--add")
 addForm.addEventListener("submit", (event) => addElement(
     event,
@@ -43,3 +49,7 @@ addForm.addEventListener("submit", (event) => addElement(
     addForm.elements.attr.value,
     addForm.elements.value.value
 ))
+
+
+const formSerch = document.querySelector(".form__input--serch")
+formSerch.addEventListener("submit", serchElements)

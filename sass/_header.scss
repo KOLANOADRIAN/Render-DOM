@@ -19,18 +19,7 @@
 }
 
 
-.header__img {
-    width: 150px ;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 6px 0 white;
-    background-image: url("https://placeimg.com/640/480/tech");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-    
-}
+
 
 @media (max-width:767px) {
     .header__img {
