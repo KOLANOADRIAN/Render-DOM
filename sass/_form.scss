@@ -8,7 +8,6 @@
 @media (max-width:767px) {
     .form__area {
         display: block;
-        
     }
 }
 
@@ -34,9 +33,19 @@
     .form__input--serch {
         width: 100%;
         margin: 20px auto;
+        padding: 10px;
+        text-align: center;
     }
     .form__submit {
+        margin-top: 40px;
         width: 100%;
+        border: none;
+        padding: 10px;
+        color: white;
+        background-color: rgb(89, 35, 128);
+        &:hover {
+            background-color: rgb(127, 97, 148);
+        }
     }
 }
 .form__title{
@@ -59,14 +68,4 @@
    &:hover {
        background-color: rgb(127, 97, 148);
    }
-}
-
-
-.form__input--serch {
-   
-}
-
-
-.submit {
-   
 }

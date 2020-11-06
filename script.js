@@ -3,15 +3,6 @@ const powitanie = () => {
     console.log("Hello-FrondEnd__developers")
 };
 
-window.ononline = (event) => {
-    console.log("You are now connected to the network.");
-};
-
-window.onoffline = (event) => {
-    console.log("The network connection has been lost.");
-};
-
-
 window.addEventListener("load", function () {
     console.log("strona się załadowała");
 });
@@ -37,7 +28,14 @@ const addElement = (event, node, txt, attr, value) => {
 
 const serchElements = (event) => {
     event.preventDefault();
-    
+    const infoElement = document.querySelector(".result")
+    serchElements.elements
+    // i tu koniec 4:41
+
+}
+
+const schowInfo = () => {
+
 }
 
 
