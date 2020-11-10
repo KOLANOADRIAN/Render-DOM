@@ -80,18 +80,18 @@ body {
   }
 }
 
-.form--serch {
+.form--search {
   display: block;
 }
 
-.form--serch .form__input--serch {
+.form--search .form__input--search {
   width: 100%;
   margin: 20px auto;
   padding: 10px;
   text-align: center;
 }
 
-.form--serch .form__submit {
+.form--search .form__submit {
   margin-top: 40px;
   width: 100%;
   border: none;
@@ -100,7 +100,7 @@ body {
   background-color: #592380;
 }
 
-.form--serch .form__submit:hover {
+.form--search .form__submit:hover {
   background-color: #7f6194;
 }
 

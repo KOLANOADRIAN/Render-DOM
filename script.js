@@ -14,31 +14,6 @@ const init = () => {
 init();
 
 
-const addElement = (event, node, txt, attr, value) => {
-    event.preventDefault();
-    const elementNode = document.createElement(node);
-    if (txt) {
-        const text = document.createTextNode(txt);
-        elementNode.appendChild(text);
-    }
-    elementNode.setAttribute(attr, value)
-    document.querySelector(".content").appendChild(elementNode);
-    clearForm = (addForm)
-};
-
-const serchElements = (event) => {
-    event.preventDefault();
-    const infoElement = document.querySelector(".result")
-    serchElements.elements
-    // i tu koniec 4:41
-
-}
-
-const schowInfo = () => {
-
-}
-
-
 const addForm = document.querySelector(".form--add")
 addForm.addEventListener("submit", (event) => addElement(
     event,
@@ -46,8 +21,48 @@ addForm.addEventListener("submit", (event) => addElement(
     addForm.elements.text.value,
     addForm.elements.attr.value,
     addForm.elements.value.value
-))
+));
 
 
-const formSerch = document.querySelector(".form__input--serch")
-formSerch.addEventListener("submit", serchElements)
+const addElement = (event, node, txt, attr, value) => {
+    event.preventDefault();
+    const elementNode = document.createElement(node);
+    if (txt) {
+        const text = document.createTextNode(txt);
+        elementNode.appendChild(text);
+    }
+    if (attr) {
+        elementNode.setAttribute(attr, value)
+    }
+    document.querySelector(".content").appendChild(elementNode);
+};
+
+const serchForm = document.querySelector(".form--search")
+serchForm.addEventListener("submit", (event) => serchElements(event, serchForm.elements["serching-element"].value));
+
+
+const serchElements = (event, nameElement) => {
+    event.preventDefault();
+    const infoElement = document.querySelector(".result")
+    const elements = document.querySelectorAll(nameElement)
+    console.log(elements);
+    if (elements.length) {
+        infoElement.innerHTML = `<p class="result__info">W tym dokumencie znalazłem ${elements.length}elenentów ${nameElement}</p>`;
+    schowInfo();
+    } else  { infoElement.innerHTML = `<p class="result__info">W tym dokumencie znalazłem NEIE ZNALAZŁEM elenentów ${nameElement}</p>`;
+    return;
+}
+};
+
+
+
+
+const schowInfo = () => {console.log("funkcja show info działa") }
+
+
+
+
+// .....................
+
+
+
